@@ -130,8 +130,7 @@ The application comes with the following predefined habits for testing purpose:
 * study (Daily)
 * exercise (Daily)
 * devotion (Daily)
-* sport (Daily)
-* grocery (Weekly)
+* prep (Weekly)
 * deep-cleaning (monthly)
 
 
