@@ -1,7 +1,5 @@
 # Habit Tracker App
 
-# Habit-Tracker-App Project
-
 ## Table of Contents
 1. [Introduction](#Introduction)
 2. [Motivation](#Motivation)
@@ -57,7 +55,7 @@ streamlit run main.py
 ```
 
 
-## Habit Tracker App Flowchart:
+## Flowchart
 
 [Visit App]
    ↓
