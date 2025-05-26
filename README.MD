@@ -4,12 +4,13 @@
 1. [Introduction](#Introduction)
 2. [Motivation](#Motivation)
 3. [Goals](#Goals)
-4. [Installation](#Installation)
-5. [Flowchart](#Flowchart)
-6. [Usage](#Usage)
-7. [Features](#Features)
-8. [Sample Habits](#Sample)
-8. [Contributing](#Contributing)
+4. [Technologies](#Technologies)
+5. [Installation](#Installation)
+6. [Flowchart](#Flowchart)
+7. [Usage](#Usage)
+8. [Features](#Features)
+9. [Sample Habits](#Sample)
+10. [Contributing](#Contributing)
 
 ## Introduction
 
@@ -31,24 +32,38 @@ The project was inspired by the idea that habits are the foundation of personal 
 4. Ensure user data privacy with user-specific habit views.
 
 
+## Technologies
+
+- **Python 3.11+**: You can download the latest version of Python [here](https://www.python.org/downloads/).
+- **[streamlit](https://streamlit.io/#install)**: For interactive UI.
+- **SQLite**: Lightweight embede database.
+- **Pandas & datetime**: For streak calculation and data handling.
+
+
 ## Installation
-
-**Requirements:** 
-Make sure you have Python 3.11+ installed on your computer. You can download the latest version of Python [here](https://www.python.org/downloads/). 
-
-**Req. Package:**
-* [streamlit](https://streamlit.io/#install) (Streamlit (Frontend GUI))
-* SQLite (Database)
-
-
-1. Clone or Download the repository from GitHub: https://github.com/Code-Ebullient/oofpp_habit_tracker_app
-2. Install dependencies: 
-
-```shell
-pip install -r requirements.txt
+1. 📦Clone or Download the repository from GitHub: https://github.com/Code-Ebullient/oofpp_habit_tracker_app
+``` shell
+git clone https://github.com/your-username/habit-tracker.git
+cd habit-tracker
 ```
 
-3. Run the app:
+2. 🐍Create and activate virtual environment: 
+```shell
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
+
+3. 📥Install Dependencies:
+``` shell
+pip install streamlit
+```
+
+4. 🗃️Initialize the database:
+``` shell
+python setup_db.py
+```
+
+5. ▶️Run the app:
 
 ```shell
 streamlit run main.py
@@ -56,7 +71,7 @@ streamlit run main.py
 
 
 ## Flowchart
-
+```
 [Visit App]
    ↓
 [Enter Name] —→ (Already registered?) → [Dashboard]
@@ -68,7 +83,7 @@ streamlit run main.py
 [Check progress → Analytics → Streaks/History]
    ↓
 [Exit or Come Back Anytime]
-
+```
 
 
 
@@ -80,15 +95,14 @@ streamlit run main.py
       
    * Enter your name to begin.
 
-   * Add habits using the input form.
+   * Add a new habit by entering a name and selecting a category.
 
-   * Mark habits as completed using the "✅ Done" button.
+   * View all habits and:
+      - Mark them as completed ✅
+      - Delete them 🗑️
+      - Calculate streaks 🔁 (based on Daily, Weekly, or Monthly)
 
-   * Delete habits with the "❌" button.
-
-   * Track your streaks for each habit.
-
-   * Logout using the "🚪 Exit App" button. 
+   * Exit the session to clear your data from the current Streamlit state. 
 
 
 
