@@ -7,7 +7,7 @@
 2. [Motivation](#Motivation)
 3. [Goals](#Goals)
 4. [Installation](#Installation)
-5. [Flowchart](#Habit Tracker App Flowchart)
+5. [Flowchart](#Flowchart)
 6. [Usage](#Usage)
 7. [Features](#Features)
 8. [Sample Habits](#Sample)
